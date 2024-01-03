@@ -9,24 +9,28 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #e5e7eb;
 }
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 850px;
-  background-color: green;
+  width: 600px;
+  height: 600px;
+  border: tomato solid 5px;
 }
 
-.container div {
+.grid_container {
   display: flex;
-  background-color: blue;
-  height: 200px;
-  width: 200px;
-  /*margin: 5px;*/
+  flex-direction: row;
+  flex: 1;
+}
+
+.grid_boxes {
+  width: 10px;
+  flex: 1;
+  border: grey solid 1px;
 }
 
 footer {
