@@ -47,3 +47,8 @@ footer {
 button {
   margin-bottom: 10px;
 }
+
+h1 {
+  margin: 10px 0px;
+  text-decoration: underline;
+}
