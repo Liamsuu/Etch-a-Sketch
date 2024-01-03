@@ -7,4 +7,35 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 850px;
+  width: 850px;
+  background-color: green;
+}
+
+.container div {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  margin: 5px;
+}
+
+footer {
+  display: flex;
+  margin-top: auto;
+  background-color: #1f2937;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  color: #e5e7eb;
+  width: 100%;
 }
