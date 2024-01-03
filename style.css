@@ -17,16 +17,16 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  height: 850px;
   width: 850px;
   background-color: green;
 }
 
 .container div {
+  display: flex;
   background-color: blue;
   height: 200px;
   width: 200px;
-  margin: 5px;
+  /*margin: 5px;*/
 }
 
 footer {
@@ -38,4 +38,8 @@ footer {
   justify-content: center;
   color: #e5e7eb;
   width: 100%;
+}
+
+button {
+  margin-bottom: 10px;
 }
