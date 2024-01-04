@@ -25,8 +25,8 @@ const grid_container = document.querySelectorAll(".grid_container");
 
 const button = document.querySelector("button");
 button.addEventListener("click", () => {
-  let user_size = +prompt("Choose grid size(1- 50): ");
-  if (typeof user_size === "number" && user_size > 0 && user_size < 51) {
+  let user_size = +prompt("Choose grid size(1- 100): ");
+  if (typeof user_size === "number" && user_size > 0 && user_size < 101) {
     container.replaceChildren();
     for (let x = 0; x < user_size; x++) {
       const grid_container = document.createElement("div");

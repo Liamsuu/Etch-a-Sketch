@@ -27,7 +27,6 @@ body {
 }
 
 .grid_boxes {
-  width: 10px;
   flex: 1;
   border: grey solid 1px;
 }
