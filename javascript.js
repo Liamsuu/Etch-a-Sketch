@@ -23,7 +23,7 @@ const grid_container = document.querySelectorAll(".grid_container");
 // i don't want. all children are replaced equally for example "50" will give 50 boxes and
 // 50 divs going across thus 50x50.
 
-const button = document.querySelector("button");
+const button = document.querySelector("#size_button");
 button.addEventListener("click", () => {
   let user_size = +prompt("Choose grid size(1- 100): ");
   if (typeof user_size === "number" && user_size > 0 && user_size < 101) {
@@ -42,6 +42,10 @@ button.addEventListener("click", () => {
   }
 });
 
+const reset_button = document.querySelector("#reset_button");
+
+reset_button.addEventListener("click", resetColour);
+
 // this is used to change background when mouse is over a small box.
 function gridBackgroundChange() {
   const grids = document.querySelectorAll(".grid_boxes");
@@ -49,5 +53,12 @@ function gridBackgroundChange() {
     grid.addEventListener("mouseover", () => {
       grid.style.background = "blue";
     });
+  });
+}
+
+function resetColour() {
+  const grids = document.querySelectorAll(".grid_boxes");
+  grids.forEach((grid) => {
+    grid.style.background = "#e5e7eb";
   });
 }
